@@ -1,0 +1,83 @@
+/* - BASE HTML TEMPLATEs
+-------------------------------------------------
+	Description: Colours - Gradients
+	Author: Kevin Tjahjadi
+	Author URL: -
+	Template URL: -
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- COLOURS  ............................. 1.0.
+	- GRADIENTS ............................ 2.0.
+    	- Colours .......................... 3.1.
+*/
+
+
+/*********************************************
+	- 1.0 -  COLOURS
+*********************************************/
+
+	// $green-ll : #EAFDE6; // 234,253,230
+	// $green-l  : #BEF202; // 190,242,2
+	// $green    : #88C425; // 136,196,37
+	// $green-d  : #519548; // 81,149,72
+    // $green-dd : #1B676B; // 27,103,107
+    $green-lll: #EAFDE6; // 234,253,230
+    $green-ll : #ABFCD6; // 171,252,214
+	$green-l  : #A0EFC6; // 160,239,198
+	$green    : #57F19E; // 87,241,158
+	$green-d  : #40EFC3; // 64,239,195
+    $green-dd : #40BC99; // 64,188,153
+    $green-ddd: #1B676B; // 27,103,107
+
+    $yellow   : #FFFBD0; // 255, 251, 208
+    $orange   : #FF9900; // 255, 153, 0
+    $red	  : #C13100; // 193, 49, 0
+
+    $outline: $green-ll;
+    $outline-border: $green-ddd;
+    $background: $green-lll;
+    $text: $green-dd;
+	$header: $green-ddd;
+	$link: $orange;
+	$link-hover: $red;
+	$footer-link: $green-dd;
+	$footer-hover: $green-ddd;
+
+/*********************************************
+	- 2.0 -  GRADIENTS
+*********************************************/
+
+	@mixin button-gradient {
+		background-image: linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
+		background-image: -o-linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
+		background-image: -moz-linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
+		background-image: -webkit-linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
+		background-image: -ms-linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.37, rgb(235,152,141)),
+			color-stop(0.73, rgb(240,136,120))
+		);
+	}
+
+	@mixin button-gradient-hover {
+		background-image: linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
+		background-image: -o-linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
+		background-image: -moz-linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
+		background-image: -webkit-linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
+		background-image: -ms-linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.37, rgb(240,136,120)),
+			color-stop(0.73, rgb(235,152,141))
+		);
+	}

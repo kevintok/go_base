@@ -1,0 +1,120 @@
+/* - BASE HTML TEMPLATE
+-------------------------------------------------
+	Description: Icon Font
+	Author: Kevin Tjahjadi
+	Author URL: -
+	Template URL: -
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- ICON FONT CSS ......................... 1.0.
+*/
+
+/*********************************************
+	- 1.0 -  ICON FONT CSS
+*********************************************/
+
+@font-face {
+	font-family: 'icon-kevin';
+	src:url('/fonts/icon-kevin.eot');
+	src:url('/fonts/icon-kevin.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/icon-kevin.woff') format('woff'),
+		url('/fonts/icon-kevin.ttf') format('truetype'),
+		url('/fonts/icon-kevin.svg#icon-kevin') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icon-kevin';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-plus, .icon-minus, .icon-checkmark, .icon-cancel, .icon-notice, .icon-info, .icon-blocked, .icon-stop, .icon-search, .icon-map-marker, .icon-home, .icon-pencil, .icon-cog, .icon-star, .icon-star-2, .icon-facebook, .icon-github, .icon-linkedin, .icon-mail, .icon-google-plus, .icon-twitter {
+	font-family: 'icon-kevin';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-plus:before {
+	content: "\e000";
+}
+.icon-minus:before {
+	content: "\e001";
+}
+.icon-checkmark:before {
+	content: "\e002";
+}
+.icon-cancel:before {
+	content: "\e003";
+}
+.icon-notice:before {
+	content: "\e004";
+}
+.icon-info:before {
+	content: "\e007";
+}
+.icon-blocked:before {
+	content: "\e008";
+}
+.icon-stop:before {
+	content: "\e009";
+}
+.icon-search:before {
+	content: "\e005";
+}
+.icon-map-marker:before {
+	content: "\e006";
+}
+.icon-home:before {
+	content: "\e00a";
+}
+.icon-pencil:before {
+	content: "\e00b";
+}
+.icon-cog:before {
+	content: "\e00c";
+}
+.icon-star:before {
+	content: "\e00d";
+}
+.icon-star-2:before {
+	content: "\e00e";
+}
+.icon-facebook:before {
+	content: "\e011";
+}
+.icon-github:before {
+	content: "\e013";
+}
+.icon-linkedin:before {
+	content: "\e014";
+}
+.icon-mail:before {
+	content: "\e015";
+}
+.icon-google-plus:before {
+	content: "\e016";
+}
+.icon-twitter:before {
+	content: "\e018";
+}
